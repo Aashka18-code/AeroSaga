@@ -17,7 +17,10 @@ public static void main(String[] args) {
 
     Worker worker = factory.newWorker("DRONE_TASK_QUEUE");
 
-    worker.registerWorkflowImplementationTypes(DroneWorkflowImpl.class);
+    worker.registerWorkflowImplementationTypes(
+        DroneWorkflowImpl.class,
+        MultiDroneWorkflowImpl.class
+);
 
     worker.registerActivitiesImplementations(new DroneActivitiesImpl());
 
