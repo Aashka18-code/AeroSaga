@@ -6,7 +6,6 @@ import io.temporal.workflow.WorkflowMethod;
 @WorkflowInterface
 public interface DroneWorkflow {
 
-@WorkflowMethod
-String takeoff(String droneId);
-
+    @WorkflowMethod
+    String takeoff(String droneId);
 }
