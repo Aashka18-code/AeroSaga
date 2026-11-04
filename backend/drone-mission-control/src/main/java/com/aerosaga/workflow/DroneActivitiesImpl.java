@@ -15,11 +15,11 @@ public class DroneActivitiesImpl implements DroneActivities {
         return "Navigation completed.";
     }
 
-    @Override
-    public String dropPackage(String droneId) {
-        System.out.println("Drone " + droneId + " is dropping package.");
-        return "Package dropped successfully.";
-    }
+   @Override
+public String dropPackage(String droneId) {
+    System.out.println("Drone " + droneId + " package drop failed!");
+    throw new RuntimeException("Package drop failed!");
+}
 
     @Override
     public String returnToBase(String droneId) {

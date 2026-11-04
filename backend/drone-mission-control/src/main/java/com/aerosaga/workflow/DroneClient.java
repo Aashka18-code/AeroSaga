@@ -18,7 +18,7 @@ public class DroneClient {
                 DroneWorkflow.class,
                 WorkflowOptions.newBuilder()
                         .setTaskQueue("DRONE_TASK_QUEUE")
-                        .setWorkflowId("drone-takeoff-001")
+                        .setWorkflowId("drone-takeoff-failure-003")
                         .build()
         );
 
